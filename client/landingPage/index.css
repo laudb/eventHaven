@@ -20,16 +20,157 @@
 }
 .contain{
 	text-align: center;
+	margin-top: 100px;
 }
-div div div input{
+.eventfield{
 	height: 50px;
 	border-radius: 55px;
 	width: 250px;
 	background-color: rgba(255,255,255,0.2);
 	border: solid #fff 0px;
-	color: #fff
+	color: #fff;
+	font-size: 18px;
+}
+/*.eventfield::-moz-placeholder*/
+.eventfield::-webkit-input-placeholder{
+	color: rgba(255,255,255,0.6);
 }
 div div div input:active{
 	border-color: transparent !important;
 	border: solid 1px !important;
 }
+.ehButton{
+	height: 50px;
+	border-radius:2px;
+	border: solid 2px;
+	border-color: #bfd9f2;
+	background-color: transparent;
+	width: 80px;
+	padding: 12px;
+	margin-top: 14px;
+}
+.ehButton:hover{
+	background-color: #bfd9f2;
+	border-color: #bfd9f2;
+	color:#082155;
+}
+.vendor_btn{
+	background-color: #bfd9f2 !important;
+	border-color: #bfd9f2 !important;
+	color:#082155 !important;
+}
+.vendor_btn:hover{
+	background-color: transparent !important;
+	color: #fff !important;
+}
+.lpVendor{
+	/*height: 30px;*/
+	/*border: solid 1px black;*/
+	margin: 0px !important;
+	padding: 0px !important;
+	width: 230px;
+}
+
+
+/*grid icons*/
+.grid-icon-container {
+	/*background-color: #ecf0f1;*/
+	margin-bottom: 60px;
+	padding: 30px 0 0 0;
+	position: relative;
+	font-size: 128%;
+}
+.grid-icon-container #bigTriangleColor {
+	position: absolute;
+	bottom: -100px;
+}
+.grid-icon-container #bigTriangleColor path {
+	/*fill: #ecf0f1;*/
+	/*stroke: #ecf0f1;*/
+	stroke-width: 2;
+}
+.grid-icon-container .grid-icon {
+	text-align: center;
+	color: #666666;
+}
+.grid-icon-container .grid-icon h4 {
+	font-size: 16px;
+	font-weight: 600;
+}
+.grid-icon-container .grid-icon div p {
+	text-align: center;
+	font-size: 14px;
+	color: #999999;
+}
+.grid-icon-container .grid-icon span {
+	text-align: center;
+	font-size: 3.5em;
+	color: #666666;
+	border: 1px solid #bfd9f2;
+	padding: 3px 15px;
+	display: inline-block;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background-clip: padding-box;
+	position: relative;
+	margin-bottom: 30px;
+	/*background-color: #ecf0f1;*/
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.grid-icon-container .grid-icon span:after,
+.grid-icon-container .grid-icon span:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.grid-icon-container .grid-icon span:after {
+	border-color: rgba(255, 255, 255, 0);
+	/*border-top-color: #ecf0f1;*/
+	border-width: 10px;
+	margin-left: -10px;
+}
+.grid-icon-container .grid-icon span:before {
+	border-color: rgba(255, 255, 255, 0);
+	/*border-top-color: #666666;*/
+	border-width: 11px;
+	margin-left: -11px;
+}
+.grid-icon-container .grid-icon span:hover {
+	background-color: #bfd9f2;
+	border: 1px solid #bfd9f2;
+	color: #ffffff;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.grid-icon-container .grid-icon span:hover:after,
+.grid-icon-container .grid-icon span:hover:before {
+	border-top: 11px solid #bfd9f2;
+	border-top-color: #bfd9f2;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.grid-icon-container .grid-icon p {
+	text-align: left;
+}
+
+/*grid icons*/

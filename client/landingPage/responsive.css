@@ -65,6 +65,7 @@
     /*  General CSS  */
     body{
         background: #fff;
+        overflow-x:hidden;
     }
 
     .wrapper{
@@ -114,7 +115,7 @@
     header{
         width: 100%;
         height: 100px;
-        background: rgba(28, 54, 85, .2);
+        background: rgba(0, 0, 0, .2);
     }
 
     header .logo{
@@ -269,22 +270,22 @@
     }
 
     .search #search::-webkit-input-placeholder{
-       color: #95badf;
-   }
+     color: #95badf;
+ }
 
-   .search #search:-moz-placeholder{ 
-       color: #95badf;  
-   }
+ .search #search:-moz-placeholder{ 
+     color: #95badf;  
+ }
 
-   .search #search::-moz-placeholder{ 
-       color: #95badf;  
-   }
+ .search #search::-moz-placeholder{ 
+     color: #95badf;  
+ }
 
-   .search #search:-ms-input-placeholder{  
-       color: #95badf;  
-   } 
+ .search #search:-ms-input-placeholder{  
+     color: #95badf;  
+ } 
 
-   .search #submit_search{
+ .search #submit_search{
     display: none;
 }
 
@@ -409,7 +410,7 @@
 .search .advanced_search #min_price::-webkit-input-placeholder,
 .search .advanced_search #max_price::-webkit-input-placeholder,
 .search .advanced_search #keywords::-webkit-input-placeholder{
-   color: #95badf;
+ color: #95badf;
 }
 
 .search .advanced_search #check_in_date:-moz-placeholder, 
@@ -417,7 +418,7 @@
 .search .advanced_search #min_price:-moz-placeholder, 
 .search .advanced_search #max_price:-moz-placeholder, 
 .search .advanced_search #keywords:-moz-placeholder{ 
-   color: #95badf;  
+ color: #95badf;  
 }
 
 .search .advanced_search #check_in_date::-moz-placeholder, 
@@ -425,7 +426,7 @@
 .search .advanced_search #min_price::-moz-placeholder, 
 .search .advanced_search #max_price::-moz-placeholder, 
 .search .advanced_search #keywords::-moz-placeholder{ 
-   color: #95badf;  
+ color: #95badf;  
 }
 
 .search .advanced_search #check_in_date:-ms-input-placeholder,  
@@ -433,7 +434,7 @@
 .search .advanced_search #min_price:-ms-input-placeholder,  
 .search .advanced_search #max_price:-ms-input-placeholder,  
 .search .advanced_search #keywords:-ms-input-placeholder{  
-   color: #95badf;  
+ color: #95badf;  
 } 
 
 
@@ -761,8 +762,12 @@ footer .copyrights a.ph_link{
 
 
 @media (max-width:800px){
+    .eventfield .ehButton{
+
+    }
+
     .hero{
-        height: 600px;
+        height: 700px;
     }
 
     .hero .caption{
@@ -920,6 +925,24 @@ footer .copyrights a.ph_link{
 
 
 @media (max-width:500px){
+    .lpVendor{
+        width: 170px;
+        line-height: 0px;
+    }
+    .contain{
+        margin-top: 10px;
+        margin-left:10px;
+    }
+    .eventfield .ehbutton{
+        width:100%;
+        text-align: center;
+    }
+    .smallbtn{
+        margin-left: -30px;
+    }
+    .eventfield{
+        text-align: center;
+    }
     .hero .caption h2{
         font-size: 85px;
     }
