@@ -70,6 +70,16 @@ div div div input:active{
 	padding: 0px !important;
 	width: 230px;
 }
+.eventPlanModal{
+	height: 100%;
+	width:100%;
+	font-size: 150%;
+	text-align: center;
+}
+.eventModalContent{	
+	border-radius: 0px !important;
+	height: 100%
+}
 
 
 /*grid icons*/
