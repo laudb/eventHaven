@@ -4,19 +4,20 @@ Template.selectVendors.events({
 		if(! Session.get("key")) v = [];
 		else v = Session.get("key");
 
-		var name = $('.vendorName').html();
-		var price = $('.vendorPrice').html();
+		var id = e.currentTarget.id;
+		// var name = $('.vendorName').html();
+		// var price = $('.vendorPrice').html();
 
-		var obj = {
-			objname: name,
-			objprice: price
-		}
+		// var obj = {
+		// 	objname: name,
+		// 	objprice: price
+		// }
 
-		//if(_.contains(v, obj)) return;
+		//if(_.contains(v, obj)) return;    ---this was commented earlier
 
-		v.push(obj)
+		v.push(id)
 		Session.set('key', v);
-		console.log(v);
+		console.log(id);
 
 		// Config.name.push(obj);
 		// console.log(Config.name);
@@ -39,16 +40,14 @@ Template.selectVendors.events({
 
 		// item.insertBefore(div, item.lastChild);
 		// document.getElementsByClassName(".mainVendors").appendChild(div);
-
-
 	}
 });
 
 Template.registerHelper('Config', function () {
 
-	var vendor = Session.get('key');
+	// var vendor = Session.get('key');
 
-	return vendor;
+	// return vendor;
 
 	// return Config.name;	
 });

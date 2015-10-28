@@ -1,5 +1,6 @@
 <template name="food">
 	<!-- Card Projects -->
+	{{#each foodVendor}}
 	<div class="col-md-4 col-sm-6">
 		<div class='report-module'>
 			<div class='thumbnail'>
@@ -7,19 +8,20 @@
 			</div>
 			<div class='post-content'>
 				<div class='category'>Accra, Ghana</div>
-				<h1 class='title'>Coco lounge meal services</h1>
-				<p class='description'>GHC20 per plate</p>
+				<h1 class='title vendorName'>{{name}}</h1>
+				<p class='description vendorPrice'>GHC{{price}} per plate</p>
 				<div class='post-meta'>
 					<span class='comments'>
-						<a class="btn btn-primary" href='#'>Add Vendor</a>
+						<a class="btn btn-primary addVendor" id="{{_id}}" href='#'>Add Vendor</a>
 					</span>
 				</div>
 			</div>
 		</div>
 
 	</div>
+	{{/each}}
 
-	<div class="col-md-4  col-sm-6">
+	<!-- <div class="col-md-4  col-sm-6">
 		<div class='report-module'>
 			<div class='thumbnail'>
 				<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg'>
@@ -29,35 +31,30 @@
 				<h1 class='title'>Rose of sharon catering</h1>
 				<p class='description'>GHC25 per plate</p>
 				<div class='post-meta'>
-											<!-- <span class='timestamp'>
-												<a class="btn btn-link" href='#'>Access Report</a>
-											</span> -->
-											<span class='comments'>
-												<a class="btn btn-primary" href='#'>Add Vendor</a>
-											</span>
-										</div>
-									</div>
-								</div>
+					<span class='comments'>
+						<a class="btn btn-primary" href='#'>Add Vendor</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
 
-							</div>
+	<div class="col-md-4  col-sm-6">
+		<div class='report-module'>
+			<div class='thumbnail'>
+				<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg'>
+			</div>
+			<div class='post-content'>
+				<div class='category'>Accra, Ghana</div>
+				<h1 class='title'>Fairhair catering services</h1>
+				<p class='description'>GHC20 per plate</p>
+				<div class='post-meta'>
 
-							<div class="col-md-4  col-sm-6">
-								<div class='report-module'>
-									<div class='thumbnail'>
-										<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg'>
-									</div>
-									<div class='post-content'>
-										<div class='category'>Accra, Ghana</div>
-										<h1 class='title'>Fairhair catering services</h1>
-										<p class='description'>GHC20 per plate</p>
-										<div class='post-meta'>
-
-											<span class='comments'>
-												<a class="btn btn-primary" href='#'>Add Vendor</a>
-											</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</template>
+					<span class='comments'>
+						<a class="btn btn-primary" href='#'>Add Vendor</a>
+					</span>
+				</div>
+			</div>
+			</div>
+		</div> -->
+	</template>
