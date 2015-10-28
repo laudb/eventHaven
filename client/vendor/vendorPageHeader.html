@@ -9,5 +9,12 @@
           <span class="icon-bar"></span>
       </button>
     </div>
+    {{#if logoutSwitch}}
+    <div class="pull-right">
+    <a href="{{pathFor 'signout'}}" class="navbar-text">
+        Log Out
+    </a>
+    </div>
+    {{/if}}
   </div>
 </template>
