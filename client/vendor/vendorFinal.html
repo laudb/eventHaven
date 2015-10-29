@@ -5,10 +5,71 @@
       <div class="col-md-6">
       <h2>Business Information</h2>
         {{#autoForm collection="Vendors" id="updateVendorForm" type="update" doc=iVendor }}
-        <fieldset>
-          {{> afQuickField name='category'}}
-          {{> afQuickField name='price'}}
-        </fieldset>
+          {{> afQuickField name="category" options="allowed"}}
+          <!-- food -->
+            {{#if afFieldValueIs name="category" value="food"}}
+              {{> afQuickField name="price"}}
+              {{> afQuickField name="unit2" options="allowed"}}
+            {{/if}}
+            <!-- chair rentals -->
+            {{#if afFieldValueIs name="category" value="chair rentals"}}
+              {{> afQuickField name="price"}}
+              {{> afQuickField name="unit1" options="allowed"}}
+            {{/if}}
+            <!-- photography -->
+            {{#if afFieldValueIs name="category" value="photography"}}
+              {{> afQuickField name="price"}}
+              {{> afQuickField name="unit3" options="allowed"}}
+            {{/if}}
+            <!-- dj -->
+            {{#if afFieldValueIs name="category" value="dj"}}
+              {{> afQuickField name="price"}}
+              {{> afQuickField name="unit3" options="allowed"}}
+            {{/if}}
+            <!-- mc -->
+             {{#if afFieldValueIs name="category" value="mc"}}
+              {{> afQuickField name="price"}}
+              {{> afQuickField name="unit3" options="allowed"}}
+            {{/if}}
+            <!-- videography -->
+             {{#if afFieldValueIs name="category" value="videography"}}
+              {{> afQuickField name="price"}}
+              {{> afQuickField name="unit3" options="allowed"}}
+            {{/if}}
+            <!-- live band -->
+             {{#if afFieldValueIs name="category" value="live band"}}
+              {{> afQuickField name="price"}}
+              {{> afQuickField name="unit3" options="allowed"}}
+            {{/if}}
+            <!-- drinks -->
+             {{#if afFieldValueIs name="category" value="drinks"}}
+              {{> afQuickField name="price"}}
+            {{/if}}
+            <!-- wedding dresses -->
+             {{#if afFieldValueIs name="category" value="wedding dresses"}}
+              {{> afQuickField name="price"}}
+            {{/if}}
+            <!-- venues -->
+             {{#if afFieldValueIs name="category" value="venues"}}
+              {{> afQuickField name="price"}}
+            {{/if}}
+            <!-- decoration -->
+             {{#if afFieldValueIs name="category" value="decoration"}}
+              {{> afQuickField name="price"}}
+            {{/if}}
+            <!-- transport -->
+             {{#if afFieldValueIs name="category" value="transport"}}
+              {{> afQuickField name="price"}}
+              {{> afQuickField name="unit3" options="allowed"}}
+            {{/if}}
+            <!-- cakes -->
+             {{#if afFieldValueIs name="category" value="cakes"}}
+              {{> afQuickField name="price"}}
+            {{/if}}
+
+        <!-- <fieldset>
+          {{> afQuickField name='category'}} 
+        </fieldset> -->
       <button type="submit" class="btn btn-primary">Done</button>
       {{/autoForm}}
       </div>
