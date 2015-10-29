@@ -12,3 +12,10 @@ Template.selectedVendors.helpers({
 		})
 	}
 });
+
+
+Template.selectedVendors.events({
+	'click #slDone': function () {
+		
+	}
+});
