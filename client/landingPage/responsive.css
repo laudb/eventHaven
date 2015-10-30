@@ -184,11 +184,25 @@
         background: #ffffff;
         color: #1c3655;
     }
+    .login_btn{
+        text-decoration: none;
+        color: #fff;
+        font-family: "lato-regular", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        letter-spacing: 1px;
+        /*float: right;*/
+        margin: 30px 0 0 50px;
+        padding: 10px 30px 11px 30px;
+        border: 2px solid #ffffff;
+        background: transparent;
 
-
-
-
-
+        transition: background .1s linear;
+        -webkit-transition: background .1s linear;
+        -moz-transition: background .1s linear;
+        -o-transition: background .1s linear;
+        background: #ffffff;
+        color: #1c3655;
+    }
 
 
 
@@ -270,22 +284,22 @@
     }
 
     .search #search::-webkit-input-placeholder{
-     color: #95badf;
- }
+       color: #95badf;
+   }
 
- .search #search:-moz-placeholder{ 
-     color: #95badf;  
- }
+   .search #search:-moz-placeholder{ 
+       color: #95badf;  
+   }
 
- .search #search::-moz-placeholder{ 
-     color: #95badf;  
- }
+   .search #search::-moz-placeholder{ 
+       color: #95badf;  
+   }
 
- .search #search:-ms-input-placeholder{  
-     color: #95badf;  
- } 
+   .search #search:-ms-input-placeholder{  
+       color: #95badf;  
+   } 
 
- .search #submit_search{
+   .search #submit_search{
     display: none;
 }
 
@@ -410,7 +424,7 @@
 .search .advanced_search #min_price::-webkit-input-placeholder,
 .search .advanced_search #max_price::-webkit-input-placeholder,
 .search .advanced_search #keywords::-webkit-input-placeholder{
- color: #95badf;
+   color: #95badf;
 }
 
 .search .advanced_search #check_in_date:-moz-placeholder, 
@@ -418,7 +432,7 @@
 .search .advanced_search #min_price:-moz-placeholder, 
 .search .advanced_search #max_price:-moz-placeholder, 
 .search .advanced_search #keywords:-moz-placeholder{ 
- color: #95badf;  
+   color: #95badf;  
 }
 
 .search .advanced_search #check_in_date::-moz-placeholder, 
@@ -426,7 +440,7 @@
 .search .advanced_search #min_price::-moz-placeholder, 
 .search .advanced_search #max_price::-moz-placeholder, 
 .search .advanced_search #keywords::-moz-placeholder{ 
- color: #95badf;  
+   color: #95badf;  
 }
 
 .search .advanced_search #check_in_date:-ms-input-placeholder,  
@@ -434,7 +448,7 @@
 .search .advanced_search #min_price:-ms-input-placeholder,  
 .search .advanced_search #max_price:-ms-input-placeholder,  
 .search .advanced_search #keywords:-ms-input-placeholder{  
- color: #95badf;  
+   color: #95badf;  
 } 
 
 

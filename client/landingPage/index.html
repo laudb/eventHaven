@@ -42,15 +42,16 @@
 						{{> afQuickField name='eventDate' class="eventfield" placeholder ="Pick a date"}}
 					</div>
 					<div class="col-lg-2 col-md-2 col-xs-6 smallbtn">
-						<a type="submit" class="ehButton btn btn-primary">Plan</a>
+						<button type="submit" class="ehButton btn btn-primary" data-toggle="modal" data-target="#eventModal">Plan</button>
 					</div>
 				</div>
 			</div>
 			{{/autoForm}}
 
 		</section>
+		{{>eventDetails}}
 	</section><!--  end hero section  -->
-
+	
 	<section>
 		<h1 style="" align="center">Our Vendors</h1>
 		<div class="row" style="line-height: 0px;">
@@ -112,7 +113,7 @@
 	</section> -->	
 
 	<footer>
-		<div class="wrapper footer">
+		<div class="wrapper lpfooter">
 			<ul>
 				<li class="links">
 					<ul>
@@ -139,4 +140,40 @@
 	</footer>
 	<!--  end footer  -->
 	
+</template>
+
+
+<template name="eventDetails">
+	<!-- Modal -->
+	<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="eventPlanModal modal-dialog">
+			<div class="eventModalContent modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Fill in Event Details</h4>
+				</div>
+				<div class="modal-body">
+					{{#autoForm collection="Events" doc=anEvent id="eventDetailForm" type="update"}}
+					<fieldset>
+						
+						{{> afQuickField name='type' options="allowed"}}
+						<br>
+						
+						{{> afQuickField name='time' }}
+						<br>
+						
+						{{> afQuickField name='budget' }}
+						<br>
+						
+						{{> afQuickField name='venue'}}
+					</fieldset>
+					<br>
+					<br>
+
+					<button type="submit" id="submit" class="vendor_btn login_btn" data-dismiss="modal">Submit</button>
+					{{/autoForm}}
+				</div>
+			</div>
+		</div>
+	</div>
 </template>

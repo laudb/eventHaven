@@ -1,0 +1,22 @@
+<template name="selectedVendors">
+	<div class="selectedVendors">
+		<h3 class="svheader text-center">Selected Vendors</h3>
+		<hr>
+		<div id="vera" class="mainVendors">
+			{{#each vendors}}
+			<div class="well text-center">
+				<h3 class="svtitle">{{name}}</h3>
+				<p class="well-text">GHC {{price}}</p>
+			</div>
+			{{/each}}
+
+			<!-- <div class="well text-center">
+				<h3 class="svtitle">Fairhair Catering</h3>
+				<p class="well-text">GHC 20/plate</p>
+			</div> -->
+		</div>
+		<div class="text-center">
+			<button type="submit" id="slDone" class="vendor_btn login_btn">Done</button>
+		</div>
+	</div>
+</template>

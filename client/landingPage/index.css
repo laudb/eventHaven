@@ -35,6 +35,10 @@
 .eventfield::-webkit-input-placeholder{
 	color: rgba(255,255,255,0.6);
 }
+.eventfield:focus{
+	background-color: rgba(255,255,255,0.3) !important;
+
+}
 div div div input:active{
 	border-color: transparent !important;
 	border: solid 1px !important;
@@ -68,7 +72,17 @@ div div div input:active{
 	/*border: solid 1px black;*/
 	margin: 0px !important;
 	padding: 0px !important;
-	width: 230px;
+	width: 227px;
+}
+.eventPlanModal{
+	height: 100%;
+	width:100%;
+	font-size: 150%;
+	text-align: center;
+}
+.eventModalContent{	
+	border-radius: 0px !important;
+	height: 100%
 }
 
 
