@@ -135,7 +135,7 @@
 		</div>
 
 		<div class="copyrights wrapper">
-			Copyright © 2015 <a href="" class="ph_link">EventHub</a>. All Rights Reserved.
+			Copyright © 2015 <a href="" class="ph_link">EventHaven</a>. All Rights Reserved.
 		</div>
 	</footer>
 	<!--  end footer  -->
@@ -152,7 +152,7 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					<h4 class="modal-title" id="myModalLabel">Fill in Event Details</h4>
 				</div>
-				<div class="modal-body">
+				<div class="modal-body" style="width:50%; margin:0 auto;">
 					{{#autoForm collection="Events" doc=anEvent id="eventDetailForm" type="update"}}
 					<fieldset>
 						
@@ -165,7 +165,10 @@
 						{{> afQuickField name='budget' }}
 						<br>
 						
-						{{> afQuickField name='venue'}}
+						{{> afQuickField name='venue' options="allowed"}}
+						  {{#if afFieldValueIs name='venue' value='yes'}}
+						    {{> afQuickField name="venueLocation"}}
+					    {{/if}}
 					</fieldset>
 					<br>
 					<br>
