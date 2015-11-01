@@ -160,15 +160,32 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					<h4 class="modal-title" id="myModalLabel">Fill in Event Details</h4>
 				</div>
-				<div class="modal-body" style="width:50%; margin:0 auto;">
+				<div class="modal-body" style="width:40%; margin:0 auto;">
 					{{#autoForm collection="Events" doc=anEvent id="eventDetailForm" type="update"}}
 						<fieldset style="font-size:20px;">
 							
 							{{> afQuickField name='type' options="allowed"}}
 							
 							<br>
-							
-							{{> afQuickField name='time' }}
+							<ul class="list-inline">
+								<li>
+									<div class="hour">
+										{{> afQuickField name='hour' options="allowed" firstOption="hour"}}
+									</div>
+								</li>
+								<li>
+									:
+								</li>
+								<li>
+									<div class="minutes">
+										{{> afQuickField name='minute' options="allowed" firstOption="minute"}}
+									</div>
+								</li>
+								<li>
+										{{> afQuickField name='tod' options="allowed" firstOption="--"}}
+								</li>
+							</ul>
+
 							
 							<br>
 							

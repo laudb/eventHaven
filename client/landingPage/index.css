@@ -3,19 +3,16 @@
 	text-transform: none;
 	font-weight: 100;
 }
-/*
-#eventDetailForm .modal .modal-header{
-	padding: 25px 25px 25px 25px;
-}*/
 
 .modal .modal-body{
 	padding: 25px 0px 0px 0px;
 }
 
 #eventDetailForm .form-control{
-	width:50%;
+	/*width:50%;*/
 	margin: 0 auto;
 }
+
 
 .eventName{
 	/*float: left;*/
