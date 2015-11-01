@@ -2,8 +2,16 @@
 	<title>EventHaven|Find the right vendors for your event</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <!-- Load jQuery JS -->
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <!-- Load jQuery UI Main JS  -->
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	
 </head>
+<body>
+	<script src="script.js"></script>
+</body>
 <template name="index">
 
 	<section class="hero">
@@ -39,7 +47,7 @@
 						{{> afQuickField name='eventName' class="eventfield" placeholder="Name your event"}}
 					</div>
 					<div class="col-lg-5 col-md-5 col-xs-12">
-						{{> afQuickField name='eventDate' class="eventfield" placeholder ="Pick a date"}}
+						{{> afQuickField name='eventDate' class="eventfield" placeholder ="Pick a date" id="datepicker"}}
 					</div>
 					<div class="col-lg-2 col-md-2 col-xs-6 smallbtn">
 						<button type="submit" class="ehButton btn btn-primary" data-toggle="modal" data-target="#eventModal">Plan</button>
