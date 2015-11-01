@@ -20,13 +20,14 @@ Template.selectedVendors.events({
 		console.log(Session.get("key"));
 		var vendorIds =  Session.get("key");
 		console.log(vendorIds);
+
 		for (i = 0; i < vendorIds.length; i++) { 
 			Events.update(Session.get("eventId"),{
 				$addToSet:{selectedVendors:vendorIds[i]}
 			});	
 		}
 
-		// Router.go()
+		Router.go('/alldone')
 		
 	}
 });

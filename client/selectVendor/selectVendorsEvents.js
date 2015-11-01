@@ -13,14 +13,13 @@ Template.selectVendors.events({
 			var price = Vendors.findOne({_id:id}).price;
 			var population = parseInt(Events.findOne({_id:eventId}).population);
 
-			console.log(price);
-			console.log(population);
+			
 			var foodPrice = price * population;
 
-			console.log(foodPrice);
+			
 
 			totalAmt+= foodPrice;
-			console.log(totalAmt);
+			
 			$(".actualAmt").html(totalAmt);
 
 		}else if(Vendors.findOne({_id: id}).category == "drinks"){
