@@ -154,26 +154,28 @@
 				</div>
 				<div class="modal-body" style="width:50%; margin:0 auto;">
 					{{#autoForm collection="Events" doc=anEvent id="eventDetailForm" type="update"}}
-					<fieldset>
-						
-						{{> afQuickField name='type' options="allowed"}}
+						<fieldset style="font-size:20px;">
+							
+							{{> afQuickField name='type' options="allowed"}}
+							
+							<br>
+							
+							{{> afQuickField name='time' }}
+							
+							<br>
+							
+							{{> afQuickField name='budget' }}
+							<br>
+							
+							{{> afQuickField name='venue' options="allowed" noselect=true}}
+							  {{#if afFieldValueIs name='venue' value='yes'}}
+							    {{> afQuickField name="venueLocation"}}
+						    {{/if}}
+						</fieldset>
 						<br>
-						
-						{{> afQuickField name='time' }}
 						<br>
-						
-						{{> afQuickField name='budget' }}
-						<br>
-						
-						{{> afQuickField name='venue' options="allowed"}}
-						  {{#if afFieldValueIs name='venue' value='yes'}}
-						    {{> afQuickField name="venueLocation"}}
-					    {{/if}}
-					</fieldset>
-					<br>
-					<br>
 
-					<button type="submit" id="submit" class="vendor_btn login_btn" data-dismiss="modal">Submit</button>
+						<button type="submit" id="submit" class="vendor_btn login_btn" data-dismiss="modal" style="margin: 0 auto;">Submit</button>
 					{{/autoForm}}
 				</div>
 			</div>

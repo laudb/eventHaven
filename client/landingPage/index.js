@@ -26,4 +26,4 @@ Template.index.rendered = function() {
       window.allScriptsLoaded = true;
     };
 
-  }
+}
