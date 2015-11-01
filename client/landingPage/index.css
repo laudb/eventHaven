@@ -1,3 +1,19 @@
+#eventDetailForm .form-group label:not(.error){
+	font-size: 18px;
+	text-transform: none;
+	font-weight: 100;
+}
+
+.modal .modal-body{
+	padding: 25px 0px 0px 0px;
+}
+
+#eventDetailForm .form-control{
+	/*width:50%;*/
+	margin: 0 auto;
+}
+
+
 .eventName{
 	/*float: left;*/
 	/*width: 125px;

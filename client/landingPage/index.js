@@ -3,7 +3,8 @@ Template.index.rendered = function() {
     var scripts = [
       // list of JS files to be loaded.
       'js/jquery.js',
-      'js/main.js'
+      'js/main.js',
+      '/script.js'
       ];
 
       function loadNext() {
@@ -26,4 +27,4 @@ Template.index.rendered = function() {
       window.allScriptsLoaded = true;
     };
 
-  }
+}

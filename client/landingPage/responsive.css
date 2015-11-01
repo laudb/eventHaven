@@ -119,8 +119,9 @@
     }
 
     header .logo{
-        margin-top: 40px;
+        /*margin-top: 40px;*/
         float: left;
+        vertical-align: middle;
     }
 
     header a.hamburger{
@@ -246,6 +247,7 @@
         font-size: 14px;
         margin: 0 0 25px;
         left: 1px;
+        padding: 45px 0 0 0;
     }
 
 

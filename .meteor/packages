@@ -28,3 +28,6 @@ msavin:mongol
 accounts-ui
 useraccounts:bootstrap
 useraccounts:iron-routing
+aldeed:autoform-select2
+natestrauser:select2
+
