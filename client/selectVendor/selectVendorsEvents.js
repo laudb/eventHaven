@@ -1,3 +1,4 @@
+var totalAmt=0;
 Template.selectVendors.events({
 	'click .addVendor': function (e,t) {
 		var v;
@@ -5,13 +6,24 @@ Template.selectVendors.events({
 		else v = Session.get("key");
 
 		var id = e.currentTarget.id;
-		// var name = $('.vendorName').html();
-		// var price = $('.vendorPrice').html();
+		
+		var eventId = Router.current().params._id
+		// console.log(eventId);
+		if (Vendors.findOne({_id: id}).category == "food"){
+			var price = Vendors.findOne({_id:id}).price;
+			var population = parseInt(Events.findOne({_id:eventId}).population);
 
-		// var obj = {
-		// 	objname: name,
-		// 	objprice: price
-		// }
+			console.log(price);
+			console.log(population);
+			var foodPrice = price * population;
+
+			console.log(foodPrice);
+
+			totalAmt+= foodPrice;
+			console.log(totalAmt);
+			$(".actualAmt").html(totalAmt);
+
+		};
 
 		//if(_.contains(v, obj)) return;    ---this was commented earlier
 
@@ -19,27 +31,7 @@ Template.selectVendors.events({
 		Session.set('key', v);
 		console.log(id);
 
-		// Config.name.push(obj);
-		// console.log(Config.name);
-
-		// var div = document.createElement('div');
-		// div.className = "well";
-		// div.className = "text-center";
-
-		// var sName = document.createElement('h3');
-		// sName.className = "svtitle";
-		// sName.innerHTML = name;
-
-		// var sPrice = document.createElement('p');
-		// sPrice.className = "well-text";
-		// sPrice.innerHTML = price;
-
-		// div.appendChild(sName);
-		// div.appendChild(sPrice);
-		// var item = $('.mainVendors');
-
-		// item.insertBefore(div, item.lastChild);
-		// document.getElementsByClassName(".mainVendors").appendChild(div);
+		
 	}
 });
 

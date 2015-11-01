@@ -33,7 +33,25 @@
 #slDone:hover{
 	color: #082155 !important;
 }
-
+.estimateAmt{
+	width: 150px;
+	border-radius: 0px;
+	border: solid 2px #BCBCBC;
+	height: 35px;
+	padding-top: 4px;
+	font-size: 25px;
+	font-weight: 600;
+	color:#9C9393;
+}
+.actualAmt{
+	width: 150px;
+	border-radius: 0px;
+	border: solid 2px blue;
+	height: 35px;
+	padding-top: 4px;
+	font-size: 25px;
+	font-weight: 600;
+}
 
 /*card css*/
 .report-module {
