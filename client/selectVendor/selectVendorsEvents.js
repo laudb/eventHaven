@@ -23,7 +23,13 @@ Template.selectVendors.events({
 			console.log(totalAmt);
 			$(".actualAmt").html(totalAmt);
 
-		};
+		}else if(Vendors.findOne({_id: id}).category == "drinks"){
+			var price = Vendors.findOne({_id:id}).price;
+			totalAmt+= price;
+			console.log(totalAmt);
+			console.log(price);
+			$(".actualAmt").html(totalAmt);
+		}
 
 		//if(_.contains(v, obj)) return;    ---this was commented earlier
 

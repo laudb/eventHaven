@@ -1,5 +1,6 @@
 <template name="photography">
 	<!-- Card Projects -->
+	{{#each Vendor}}
 	<div class="col-md-4 col-sm-6">
 		<div class='report-module'>
 			<div class='thumbnail'>
@@ -7,17 +8,18 @@
 			</div>
 			<div class='post-content'>
 				<div class='category'>Accra, Ghana</div>
-				<h1 class='title vendorName'>oab Photography</h1>
-				<p class='description vendorPrice'>GHC1000 0-3hrs</p>
+				<h1 class='title vendorName'>{{name}}</h1>
+				<p class='description vendorPrice'>GHC{{price}} per plate</p>
 				<div class='post-meta'>
 					<span class='comments'>
-						<a class="btn btn-primary addVendor" href='#'>Add Vendor</a>
+						<a class="btn btn-primary addVendor" id="{{_id}}" href='#'>Add Vendor</a>
 					</span>
 				</div>
 			</div>
 		</div>
 
 	</div>
+	{{/each}}
 
 	<!-- <div class="col-md-4  col-sm-6">
 		<div class='report-module'>

@@ -16,6 +16,17 @@ Template.selectedVendors.helpers({
 
 Template.selectedVendors.events({
 	'click #slDone': function () {
+		console.log(Session.get("eventId"));
+		console.log(Session.get("key"));
+		var vendorIds =  Session.get("key");
+		console.log(vendorIds);
+		for (i = 0; i < vendorIds.length; i++) { 
+			Events.update(Session.get("eventId"),{
+				$addToSet:{selectedVendors:vendorIds[i]}
+			});	
+		}
+
+		// Router.go()
 		
 	}
 });
