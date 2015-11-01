@@ -7,7 +7,7 @@ Template.selectVendors.events({
 
 		var id = e.currentTarget.id;
 		
-		var eventId = Router.current().params._id
+		var eventId = Session.get("eventId");
 		// console.log(eventId);
 		if (Vendors.findOne({_id: id}).category == "food"){
 			var price = Vendors.findOne({_id:id}).price;
