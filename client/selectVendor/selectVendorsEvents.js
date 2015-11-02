@@ -17,14 +17,20 @@ Template.selectVendors.events({
 			var foodPrice = price * population;
 			console.log(price);
 			console.log(population);
-			
+
 			
 
 			totalAmt+= foodPrice;
 			
 			$(".actualAmt").html(totalAmt);
 
-		}else if(Vendors.findOne({_id: id}).category == "drinks"){
+		}else if(Vendors.findOne({_id: id}).category == "photography"){
+			var price = Vendors.findOne({_id:id}).price;
+			totalAmt+= price;
+			console.log(totalAmt);
+			console.log(price);
+			$(".actualAmt").html(totalAmt);
+		}else if(Vendors.findOne({_id: id}).category == "dj"){
 			var price = Vendors.findOne({_id:id}).price;
 			totalAmt+= price;
 			console.log(totalAmt);
