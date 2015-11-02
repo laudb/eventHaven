@@ -28,3 +28,4 @@ Template.index.rendered = function() {
     };
 
 }
+

@@ -40,14 +40,14 @@
 		<section class="caption">
 			<h2 class="caption">Plan your dream event</h2>
 			<h3 class="properties">Weddings . Birthdays . Conferences . Get-togethers</h3>
-			{{#autoForm collection="Events" id='eventForm' type="insert"}}
+			{{#autoForm collection="Events" id="eventForm" type="insert"}}
 			<div class="row contain">
 				<div class="eventContainer">
 					<div class="col-lg-5 col-md-5 col-xs-12">
-						{{> afQuickField name='eventName' class="eventfield" placeholder="Name your event"}}
+						{{> afQuickField name="eventName" class="eventfield" placeholder="Name your event"}}
 					</div>
 					<div class="col-lg-5 col-md-5 col-xs-12">
-						{{> afQuickField name='eventDate' class="eventfield" placeholder ="Pick a date" id="datepicker"}}
+						{{> afQuickField name="eventDate" class="eventfield" placeholder ="Pick a date" id="datepicker"}}
 					</div>
 					<div class="col-lg-2 col-md-2 col-xs-6 smallbtn">
 						<button type="submit" class="ehButton btn btn-primary" data-toggle="modal" data-target="#eventModal">Plan</button>
@@ -110,16 +110,6 @@
 
 	</div>
 
-	<!-- <section class="listings">
-	<div class="wrapper"> -->
-
-
-			<!-- <div class="more_listing">
-				<a href="#" class="more_listing_btn">View More Listings</a>
-			</div> -->
-		<!-- </div>
-	</section> -->	
-
 	<footer>
 		<div class="wrapper lpfooter">
 			<ul>
@@ -167,6 +157,7 @@
 						{{> afQuickField name='type' options="allowed"}}
 
 						<br>
+
 						<ul class="list-inline">
 							<li>
 								<div class="hour">
@@ -186,22 +177,19 @@
 							</li>
 						</ul>
 
-
-						<br>
-
-						{{> afQuickField name='budget' }}
-						<br>
-						{{> afQuickField name='population'}}
+							<br>
+							{{> afQuickField name='budget' }}
+							<br>
+					
+					  	{{> afQuickField name='population'}}
+						
 						<br>
 						{{> afQuickField name='venue' options="allowed" noselect=true}}
-						{{#if afFieldValueIs name='venue' value='yes'}}
-						{{> afQuickField name="venueLocation"}}
-						{{/if}}
+							{{#if afFieldValueIs name='venue' value='yes'}}
+								{{> afQuickField name="venueLocation"}}
+						  {{/if}}
 					</fieldset>
-					
-
 					<br>
-
 					<button type="submit" id="submit" class="vendor_btn login_btn">Submit</button>
 
 					{{/autoForm}}

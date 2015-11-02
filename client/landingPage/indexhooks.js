@@ -2,16 +2,13 @@ AutoForm.hooks({
 	eventForm:{
 		onSuccess:function(operation, result, template){
 			Session.set("eventId", result);
-			// console.log(result)
+		
 		}
-	}
-
-});
-AutoForm.hooks({
+	},
 	eventDetailForm:{
 		onSubmit: function(insertDoc, updateDoc, currentDoc) {
 			// $('#submit').attr('data-dismiss','modal');
-			
+			console.log('submitted');
 
 		},
 		onSuccess:function(operation, result, template){
@@ -22,6 +19,7 @@ AutoForm.hooks({
 			// 	Router.go('food', {_id: Session.get("eventId")});
 			// }, 500);
 			// window.location.reload();
+			console.log(operation);
 		},
 		onError:function(formType, error){
 			console.log(error);

@@ -3,7 +3,6 @@ Template.eventDetails.events({
 		e.preventDefault()
 		t.$(".modal").modal("hide");	
 		Meteor.setTimeout( function() {
-			console.log('hi');
 			Router.go('food', {_id: Session.get("eventId")});
 			window.location.reload();
 		}, 500);
