@@ -6,7 +6,7 @@ AutoForm.hooks({
 			console.log("in eventform")
 		},
 		onSuccess:function(operation, result, template){
-			Session.set("eventId", result);
+			Session.set("neweventId", result);
 			// console.log(result)
 			console.log("after eventform");
 

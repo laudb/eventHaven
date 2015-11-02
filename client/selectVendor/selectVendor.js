@@ -59,6 +59,7 @@ Template.selectVendors.rendered = function() {
     };
 
     Session.set("eventId", Router.current().params._id);
+    console.log(Session.get('eventId'))
     $(".estimateAmt").html(Events.findOne(Session.get('eventId')).budget);
 
   }

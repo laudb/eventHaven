@@ -1,6 +1,6 @@
 Template.eventDetails.helpers({
 	anEvent: function() {	
-		var id = Session.get("eventId");
+		var id = Session.get("neweventId");
 		console.log(id);
 
 		
