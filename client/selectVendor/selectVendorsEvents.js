@@ -15,7 +15,9 @@ Template.selectVendors.events({
 
 			
 			var foodPrice = price * population;
-
+			console.log(price);
+			console.log(population);
+			
 			
 
 			totalAmt+= foodPrice;

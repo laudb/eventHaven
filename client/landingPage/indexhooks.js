@@ -1,8 +1,18 @@
 AutoForm.hooks({
 	eventForm:{
+		onSubmit: function(insertDoc, updateDoc, currentDoc) {
+			// $('#submit').attr('data-dismiss','modal');
+			
+			console.log("in eventform")
+		},
 		onSuccess:function(operation, result, template){
 			Session.set("eventId", result);
 			// console.log(result)
+			console.log("after eventform");
+
+		},
+		onError:function(formType, error){
+			console.log(error);
 		}
 	}
 
